@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+source ~/.git-prompt.sh
+
 [[ $- != *i* ]] && return
 
 colors() {
@@ -70,9 +72,9 @@ if ${use_color} ; then
 	fi
 
 	if [[ ${EUID} == 0 ]] ; then
-		PS1='\u ( $(if [[ $? == 1 ]]; then printf "\xF0\x9F\x99\x8D"; else printf "\xF0\x9F\x99\x8E"; fi) )\[\e[0m\] :\n\w $ '
+		PS1='\u ( $(if [[ $? == 1 ]]; then printf "\xF0\x9F\x99\x8D"; else printf "\xF0\x9F\x99\x8E"; fi) )\[\e[0m\] :\n\w $(__git_ps1 " (%s)")$ '
 	else
-		PS1='\u ( $(if [[ $? == 1 ]]; then printf "\xF0\x9F\x99\x8D"; else printf "\xF0\x9F\x99\x8E"; fi) )\[\e[0m\] :\n\w $ '
+		PS1='\u ( $(if [[ $? == 1 ]]; then printf "\xF0\x9F\x99\x8D"; else printf "\xF0\x9F\x99\x8E"; fi) )\[\e[0m\] :\n\w $(__git_ps1 " (%s)")$ '
 	fi
 
 	alias ls='ls --color=auto'
