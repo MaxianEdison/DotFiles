@@ -1,18 +1,1 @@
-picom
-flameshot
-dmenu
-v2ray
-remmina
-nitrogen
-gdm
-kitty
-ranger
-gimp
-discord
-telegram-desktop
-tmux
-cowsay
-figlet
-base-devel
-tor
-torsocks
+picom flameshot dmenu v2ray remmina nitrogen kitty ranger gimp discord telegram-desktop tmux cowsay figlet base-devel tor torsocks thunar
