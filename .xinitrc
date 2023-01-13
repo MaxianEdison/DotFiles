@@ -2,8 +2,9 @@
 #
 # ~/.xinitrc
 #
-# Executed by startx (run your window manager from here)
 
+
+# Executed by startx (run your window manager from here)
 xmodmap ~/.Xmodmap
 xrdb -merge ~/.Xresources
 exec i3
