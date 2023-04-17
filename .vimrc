@@ -27,9 +27,14 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'preservim/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'PhilRunninger/nerdtree-visual-selection'
 Plugin 'fatih/vim-go'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'mileszs/ack.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+
 
 call vundle#end()
 filetype plugin indent on
@@ -58,7 +63,7 @@ let g:airline#extensions#tabline#fnamemod=':t'
 
 " Devicons
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
@@ -66,7 +71,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unmerged"  : "═",
     \ "Deleted"   : "✖",
     \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
+    \ "Clean"     : "✔",
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
