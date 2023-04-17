@@ -28,6 +28,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'preservim/nerdtree'
 Plugin 'PhilRunninger/nerdtree-visual-selection'
+Plugin 'fatih/vim-go'
+Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()
 filetype plugin indent on
