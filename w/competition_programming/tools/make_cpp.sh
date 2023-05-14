@@ -19,6 +19,19 @@ do
 
 #include <bits/stdc++.h>
 
+#define DEBUG_PRINT(fmt, ...) \\
+    do { \\
+        fprintf(stderr, "[%s:%d] " fmt "\n", __FILE__, __LINE__, ##__VA_ARGS__); \\
+    } while (0)
+
+#define ASSERT(condition, fmt, ...) \\
+    do { \\
+        if (!(condition)) { \\
+            fprintf(stderr, "[%s:%d] Assertion failed: " fmt "\n", __FILE__, __LINE__, ##__VA_ARGS__); \\
+            exit(EXIT_FAILURE); \\
+        } \\
+    } while (0)
+
 using namespace std;
 
 int main() {
