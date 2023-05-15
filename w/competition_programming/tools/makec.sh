@@ -44,8 +44,6 @@ do
 #define ASSERT_MSG(msg) \\
     ASSERT_IMPL(false, msg)
 
-using namespace std;
-
 int main(void) {
     puts("Hello, World!");
     return EXIT_SUCCESS;
