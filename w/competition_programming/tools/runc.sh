@@ -6,7 +6,7 @@ input_file="$2"
 
 # Check if a file name is provided
 if [ -z "$c_file" ]; then
-    echo "Please provide the C++ file name as a command-line argument."
+    echo "Please provide the C file name as a command-line argument."
     exit 1
 fi
 
