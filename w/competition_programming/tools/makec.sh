@@ -11,7 +11,7 @@ timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 for filename in "$@"
 do
     echo "[+] Creating file: $filename.c"
-    cat > $filename.cpp << EOF
+    cat > $filename.c << EOF
 /*
 *    @Author:   MaximilianEdison (MaxianEdison)
 *    @Date:     $timestamp
