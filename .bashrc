@@ -72,9 +72,9 @@ if ${use_color} ; then
 	fi
 
 	if [[ ${EUID} == 0 ]] ; then
-		PS1='\u ( $(if [[ $? == 1 ]]; then printf "\xF0\x9F\x99\x8D"; else printf "\xF0\x9F\x99\x8E"; fi) )\[\e[0m\] :\n\w $(__git_ps1 " (%s)")$ '
+		PS1='\[\033[01;32m\]\D{%Y-%m-%d} \t \[\033[01;34m\]\w\[\033[00m\]\$ '
 	else
-		PS1='\u ( $(if [[ $? == 1 ]]; then printf "\xF0\x9F\x99\x8D"; else printf "\xF0\x9F\x99\x8E"; fi) )\[\e[0m\] :\n\w $(__git_ps1 " (%s)")$ '
+		PS1='\[\033[01;32m\]\D{%Y-%m-%d} \t \[\033[01;34m\]\w\[\033[00m\]\$ '
 	fi
 
 	alias ls='ls --color=auto'
@@ -84,9 +84,9 @@ if ${use_color} ; then
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
-		PS1='\u@\h \W \$ '
+		PS1='\[\033[01;32m\]\D{%Y-%m-%d} \t(root) \[\033[01;34m\]\w\[\033[00m\]\$ '
 	else
-		PS1='\u@\h \w \$ '
+		PS1='\[\033[01;32m\]\D{%Y-%m-%d} \t(root) \[\033[01;34m\]\w\[\033[00m\]\$ '
 	fi
 fi
 
