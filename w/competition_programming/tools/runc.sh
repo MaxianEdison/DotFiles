@@ -10,7 +10,7 @@ if [ -z "$c_file" ]; then
     exit 1
 fi
 
-# Compile the C++ file
+# Compile the C file
 compile_output=$(cc -o "$executable" "$cpp_file" 2>&1)
 if [ $? -ne 0 ]; then
     echo "Compilation failed:"
