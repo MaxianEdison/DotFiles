@@ -6,12 +6,12 @@ input_file="$2"
 
 # Check if a file name is provided
 if [ -z "$c_file" ]; then
-    echo "Please provide the C file name as a command-line argument."
+    echo "Please provide the cpp file name as a command-line argument."
     exit 1
 fi
 
-# Compile the C file
-compile_output=$(cc -o "$executable" "$cpp_file" 2>&1)
+# Compile the cpp file
+compile_output=$(g++ -o "$executable" "$cpp_file" 2>&1)
 if [ $? -ne 0 ]; then
     echo "Compilation failed:"
     echo "$compile_output"
