@@ -1,11 +1,11 @@
 #!/bin/bash
 
-c_file="$1"
+cpp_file="$1"
 executable="exec"
 input_file="$2"
 
 # Check if a file name is provided
-if [ -z "$c_file" ]; then
+if [ -z "$cpp_file" ]; then
     echo "Please provide the cpp file name as a command-line argument."
     exit 1
 fi
