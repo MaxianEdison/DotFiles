@@ -10,15 +10,14 @@ timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 
 for filename in "$@"
 do
-    echo "[+] Creating file: $filename.c"
-    cat > $filename.c << EOF
+    echo "[+] Creating file: $filename.cpp"
+    cat > $filename.cpp << EOF
 /*
 *    @Author:   MaximilianEdison (MaxianEdison)
 *    @Date:     $timestamp
 */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <bits/stdc++.h>
 
 #ifdef DEBUG
 #define debug(fmt, ...) \\
@@ -44,9 +43,9 @@ do
 #define ASSERT_MSG(msg) \\
     ASSERT_IMPL(false, msg)
 
-int main(void) {
-    puts("Hello world!");
-    return EXIT_SUCCESS;
+int main() {
+    cout << "Hello world!" << endl;
+    return 0;
 }
 EOF
 done
