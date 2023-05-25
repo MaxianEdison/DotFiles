@@ -19,6 +19,8 @@ do
 
 #include <bits/stdc++.h>
 
+using namespace std;
+
 #ifdef DEBUG
 #define debug(fmt, ...) \\
     fprintf(stderr, "[%s:%d] " fmt "\n", __FILE__, __LINE__, ##__VA_ARGS__)
@@ -44,7 +46,7 @@ do
     ASSERT_IMPL(false, msg)
 
 int main() {
-    cout << "Hello world!" << endl;
+    // Start from here
     return 0;
 }
 EOF
