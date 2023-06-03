@@ -21,32 +21,8 @@ do
 
 using namespace std;
 
-#ifdef DEBUG
-#define debug(fmt, ...) \\
-    fprintf(stderr, "[%s:%d] " fmt "\n", __FILE__, __LINE__, ##__VA_ARGS__)
-#else
-#define debug(fmt, ...) \\
-    do {} while (0)
-#endif
-
-#define ASSERT_IMPL(cond, ...) \\
-    do { \\
-        if (!(cond)) { \\
-            fprintf(stderr, "[%s:%d] Assertion failed: ", __FILE__, __LINE__); \\
-            fprintf(stderr, __VA_ARGS__); \\
-            fprintf(stderr, "\n"); \\
-            exit(EXIT_FAILURE); \\
-        } \\
-    } while (0)
-
-#define ASSERT(cond, ...) \\
-    ASSERT_IMPL(cond, __VA_ARGS__)
-
-#define ASSERT_MSG(msg) \\
-    ASSERT_IMPL(false, msg)
-
 int main() {
-    // Start from here
+    
     return 0;
 }
 EOF
