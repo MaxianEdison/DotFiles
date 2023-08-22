@@ -10,18 +10,16 @@ timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 
 for filename in "$@"
 do
-    echo "[+] Creating file: $filename.cpp"
-    cat > $filename.cpp << EOF
+    echo "[+] Creating file: $filename.c"
+    cat > $filename.c << EOF
 /*
 *    @Author:   MaximilianEdison (MaxianEdison)
 *    @Date:     $timestamp
 */
 
-#include <bits/stdc++.h>
+#include <stdio.h>
 
-using namespace std;
-
-int main() {
+int main(void) {
     
     return 0;
 }
