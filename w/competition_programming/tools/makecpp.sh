@@ -22,7 +22,11 @@ do
 using namespace std;
 
 int main() {
-    
+#if 0
+    freopen("", "r", stdin);
+    freopen("", "w", stdout);
+#endif
+     
     return 0;
 }
 EOF
