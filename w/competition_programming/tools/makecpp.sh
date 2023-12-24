@@ -22,9 +22,9 @@ do
 using namespace std;
 
 typedef unsigned long long ull;
-typedef unsigned long ul;
-typedef long long ll;
-typedef long l;
+typedef unsigned long       ul;
+typedef long long           ll;
+typedef long                 l;
 
 int main() {
 #if 0
